@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-color: #292929;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.page {
+  display: none;
+  /* margin: 3rem; */
+  width: 100%;
+
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.75);
+  background-color: #301e5c;
+}
+.active {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 120rem;
+  max-width: 180rem;
+}
+#gameContainer {
+  display: flex;
+}
+#status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+}
+.player {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activePlayer {
+  border-radius: 1.5rem;
+  border: 3px solid red;
+}
+
+/* *********** HELP PAGE ***********  */
+#help {
+  position: fixed;
+  height: 60%;
+  width: 50%;
+  top: 50%;
+  right: 50%;
+  z-index: 10;
+  transform: translate(50%, -50%);
+  /* flex-direction: row; */
+  align-items: end;
+
+  padding: 4rem;
+}
+/* ***********  BUTTONS GENERAL ***********  */
+.numInput {
+  font-size: 1.25rem;
+  width: 5rem;
+  text-align: center;
+  height: 3rem;
+}
+.btn,
+.numInput {
+  margin-bottom: 1rem;
+}
+.btn {
+  /* display: block; */
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: #f7c214;
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+}
+/* #escBtn {
+  } */
+
+/* ***********  HELP PAGE X BUTTON ***********  */
+.close {
+  position: fixed;
+  color: #aaaaaa;
+  top: 3%;
+  right: 3%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(148, 7, 7);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ********************************* */
+#game {
+  margin: 1rem;
+  /* display: grid;
+    grid-template-columns: repeat(9, 9fr); */
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  width: 90px;
+  height: 90px;
+  margin: 2px;
+  background-size: cover;
+}
+.arrow {
+  background-color: rgba(0, 0, 0, 0.22);
+}
+.arrow:hover {
+  background-image: url(img/1010.png);
+}
+.available {
+  border: 3px solid rgb(94, 255, 0);
+}
+
+h2,
+p {
+  color: white;
+}
+p {
+  font-size: 1.7rem;
+}
+.moveBtn {
+  margin: 0.5rem;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 3rem;
+  /* background-color: #f7c214; */
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+}
